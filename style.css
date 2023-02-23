@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 :root {
     --bg: #f1f1f1;
     --btn-black: #000;
@@ -10,9 +11,11 @@
 }
 body {
     background: var(--bg);
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Krub';
+    /* font-family: Calibri, 'Trebuchet MS', sans-serif; */
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 .btn-purple {
     background-color: var(--btn-purple);
@@ -20,6 +23,7 @@ body {
     text-decoration: none;
     padding: .7rem .7rem;
     display: inline-block;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: .7em;
     letter-spacing: 1px;
@@ -30,6 +34,7 @@ body {
     text-decoration: none;
     padding: .2rem 1rem;
     display: inline-block;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: .9em;
     letter-spacing: 1px;
@@ -141,6 +146,7 @@ a {
 }
 #section-divider {
     height: max-content;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -196,7 +202,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 3rem;
-    font-size: 2.5vmin;
+    font-size: 2vmin;
 }
 header .logo {
     display: flex;
@@ -298,6 +304,9 @@ main .content .content-box .text-box {
     flex-shrink: 0;
     text-align: justify;
 }
+main .content .content-box .text-box h4 {
+    font-size: .95rem;
+}
 main .content .content-box .text-box p{
     font-size: .7rem;
     font-weight: bold;
@@ -312,7 +321,7 @@ main .content .content-box .text-box p::after{
     margin-left: 10px;
 }
 main .content .other-box {
-    width: 10vw;
+    width: 10.5vw;
     font-weight: bold;
     font-size: .9rem;
     word-break: keep-all;
@@ -345,14 +354,14 @@ main .arrows .arrow svg {
 #section-divider .text-box {
     width: max-content;
     color: #fff;
-    font-size: 5vmin;
+    font-size: 4vmin;
     font-weight: 100;
     flex-shrink: 0;
 }
 #section-divider .edition-box {
     width: min-content;
     color: #fff;
-    font-size: 5vmin;
+    font-size: 4vmin;
     font-weight: 100;
     flex-shrink: 0;
     border: 2px solid #fff;
@@ -369,16 +378,102 @@ main .arrows .arrow svg {
 }
 #new {
     height: 100vh;
-
 }
-
-
-
-
-
-
-
-
+#transition {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 3rem;
+}
+#transition .ball-2-withe.left{
+    left: 5vmin;
+    top: 7vmin;
+}
+#transition .ball-2-withe.right{
+    right: 5vmin;
+    top: 7vmin;
+}
+#transition .ball-5-withe{
+    height: 120px;
+    width: 120px;
+}
+#transition .ball-5-withe.left{
+    left: 13vmin;
+    top: 33vmin;
+}
+#transition .ball-5-withe.right{
+    right: 13vmin;
+    top: 33vmin;
+}
+#transition .ball-3-purple {
+    right: 50vmin;
+    top: 85vmin;
+    box-shadow: none;
+    background: var(--big-purple-text);
+}
+#transition .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: max-content;
+    font-size: 4vmin;
+}
+#transition .main-content .explore {
+    height: min-content;
+    font-weight: bold;
+}
+#transition .main-content .explore p::after {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    margin-left: 10px;
+}
+#transition .main-content .slogan{
+    position: absolute;
+    height: 200px;
+    top: -85vmin;
+    left: 45vmin;
+}
+#transition .main-content .slogan p {
+    font-size: 80vmin;
+}
+#transition .next-to-slogan {
+   padding-top: 27vmin;
+}
+#transition img.down-arrow {
+    position: absolute;
+    bottom: 10vmin;
+    left: 45%;
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+#transition .online-course.left{
+    position: absolute;
+    bottom: 22vh;
+    left: 0;
+    font-size: .7rem;
+    font-weight: bold;
+    transform: rotate(-90deg);
+}
+#transition .online-course.right{
+    position: absolute;
+    bottom: 22vh;
+    right: 0;
+    font-size: .7rem;
+    font-weight: bold;
+    transform: rotate(-90deg);
+}
+#transition .online-course::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    margin-right: 10px;
+}
 
 
 
@@ -393,6 +488,21 @@ main .arrows .arrow svg {
     header nav {
         display: none;
     }
+    main .title {
+        padding: 0rem 0rem 0rem 1rem;
+    } 
+    main .underline {
+        left: 1.5rem;
+    } 
+    main .content .content-box .text-box h4{
+        font-size: .9rem;
+    } 
+    main .content {
+        padding: 0rem 1rem 0rem 1rem;
+    } 
+    main .btn-box {
+        margin: 1rem 0rem 0rem 1rem;
+    } 
     main .content .content-box {
         display: flex;
         flex-direction: column;
@@ -401,7 +511,6 @@ main .arrows .arrow svg {
         height: min-content;
         width: max-content;
     } 
-
     header .box {
         width: max-content;
     }
@@ -439,6 +548,17 @@ main .arrows .arrow svg {
     }
     #section-divider div{
         margin: .5rem;
+    }
+    #transition .main-content .slogan{
+        position: absolute;
+        top: 30vh;
+        left: 35vw;
+    }
+    #transition .main-content .slogan p {
+        font-size: 25vmin;
+    }
+    #transition .ball-3-purple {
+        display: none;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
