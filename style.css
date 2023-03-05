@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
     --bg: #f1f1f1;
     --btn-black: #000;
     --btn-purple: #783faa;
     --big-purple-text: #5a2997b5;
 }
+
 * {
     box-sizing: border-box;
     transition: all .5s ease-in-out;
 }
+
 body {
     background: var(--bg);
     font-family: 'Krub';
@@ -17,6 +20,7 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+
 .btn-purple {
     background-color: var(--btn-purple);
     color: #fff;
@@ -28,6 +32,7 @@ body {
     font-size: .7em;
     letter-spacing: 1px;
 }
+
 .btn-black {
     background-color: var(--btn-black);
     color: #fff;
@@ -39,15 +44,18 @@ body {
     font-size: .9em;
     letter-spacing: 1px;
 }
+
 li {
     list-style-type: square;
     /* display: inline-block; */
     /* margin: 1rem 0; */
 }
+
 a {
     text-decoration: none;
     color: #000;
 }
+
 .ball-5-withe {
     width: 100px;
     height: 100px;
@@ -57,6 +65,7 @@ a {
     position: absolute;
     z-index: -1;
 }
+
 .ball-4-withe {
     width: 80px;
     height: 80px;
@@ -66,6 +75,7 @@ a {
     position: absolute;
     z-index: -1;
 }
+
 .ball-3-withe {
     width: 60px;
     height: 60px;
@@ -75,6 +85,7 @@ a {
     position: absolute;
     z-index: -1;
 }
+
 .ball-2-withe {
     width: 40px;
     height: 40px;
@@ -84,6 +95,7 @@ a {
     position: absolute;
     z-index: -1;
 }
+
 .ball-1-withe {
     width: 20px;
     height: 20px;
@@ -93,6 +105,7 @@ a {
     position: absolute;
     z-index: -1;
 }
+
 .ball-5-purple {
     width: 100px;
     height: 100px;
@@ -102,6 +115,7 @@ a {
     position: absolute;
     top: 0;
 }
+
 .ball-4-purple {
     width: 80px;
     height: 80px;
@@ -111,6 +125,7 @@ a {
     position: absolute;
     top: 15%;
 }
+
 .ball-3-purple {
     width: 60px;
     height: 60px;
@@ -119,6 +134,7 @@ a {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
     position: absolute;
 }
+
 .ball-2-purple {
     width: 40px;
     height: 40px;
@@ -127,6 +143,7 @@ a {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
     position: absolute;
 }
+
 .ball-1-purple {
     width: 20px;
     height: 20px;
@@ -135,15 +152,18 @@ a {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
     position: absolute;
 }
+
 .big-purple-text {
     font-size: 25rem;
     font-weight: bold;
     color: var(--big-purple-text);
 }
+
 .saturate-img {
     filter: saturate(0%);
     object-fit: scale-down;
 }
+
 #section-divider {
     height: max-content;
     width: 100%;
@@ -155,6 +175,7 @@ a {
     flex-wrap: wrap;
     padding: 3rem;
 }
+
 .underline {
     height: 2px;
     width: 40px;
@@ -163,17 +184,20 @@ a {
     top: 12.5rem;
     left: 3.5rem
 }
+
 .mid-dark-text {
     font-weight: bold;
     font-size: 2rem;
     letter-spacing: 1px;
 }
+
 .mid-white-text {
     font-weight: bold;
     font-size: 5vmin;
     letter-spacing: 1px;
     color: #fff;
 }
+
 /* ************************************
 
 ************************************* */
@@ -184,18 +208,22 @@ a {
     margin-bottom: 5vh;
     position: relative;
 }
+
 #home .ball-4-withe {
     top: -6vh;
     left: 12vw;
 }
+
 #home .ball-2-withe {
     top: 12vh;
     left: 33vw;
 }
-#home .ball-4-withe.second   {
+
+#home .ball-4-withe.second {
     top: 65vh;
     left: 20vw;
 }
+
 header {
     height: 10vh;
     display: flex;
@@ -204,47 +232,57 @@ header {
     padding: 0 3rem;
     font-size: 2vmin;
 }
+
 header .logo {
     display: flex;
     align-items: center;
 }
-header .logo img{
+
+header .logo img {
     height: 10vmin;
 }
+
 header nav {
     display: flex;
     align-items: center;
     width: 70vw;
     justify-content: center;
 }
+
 header nav ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
 }
+
 header nav ul li {
     padding: 0 1rem;
     list-style-type: none;
     font-weight: bold;
 }
+
 header .box {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 30vmin;
 }
+
 header .box a {
     flex-shrink: 0;
     width: max-content;
     margin: 0rem 1rem;
 }
+
 header .box svg {
     flex-shrink: 0;
 }
+
 .poster {
     position: absolute;
 }
+
 /* #home img.saturate-img {
     position: absolute;
     right: 0;
@@ -268,21 +306,25 @@ header .box svg {
     border-top-left-radius: 9rem;
     padding: 7vh 25vw;
 }
+
 /* main {
     width: 100vw;
 } */
 main .title {
     width: max-content;
     padding: 1rem 0rem 0rem 3rem;
-} 
+}
+
 main .title h1 {
     font-weight: 200;
     font-size: 1.7rem;
-} 
+}
+
 main .title h1 span.big-dark-text {
     font-size: 5rem;
     font-weight: bold;
 }
+
 main .content {
     display: flex;
     align-items: flex-start;
@@ -292,6 +334,7 @@ main .content {
     flex-wrap: wrap;
     padding: 0rem 2rem 0rem 3rem;
 }
+
 main .content .content-box {
     display: flex;
     flex-direction: column;
@@ -299,20 +342,24 @@ main .content .content-box {
     align-items: center;
     height: min-content;
     width: 23vw;
-} 
+}
+
 main .content .content-box .text-box {
     flex-shrink: 0;
     text-align: justify;
 }
+
 main .content .content-box .text-box h4 {
     font-size: .95rem;
 }
-main .content .content-box .text-box p{
+
+main .content .content-box .text-box p {
     font-size: .7rem;
     font-weight: bold;
     line-height: 1rem;
 }
-main .content .content-box .text-box p::after{
+
+main .content .content-box .text-box p::after {
     content: "";
     display: inline-block;
     width: 7px;
@@ -320,12 +367,14 @@ main .content .content-box .text-box p::after{
     background-color: #000;
     margin-left: 10px;
 }
+
 main .content .other-box {
     width: 10.5vw;
     font-weight: bold;
     font-size: .9rem;
     word-break: keep-all;
 }
+
 main .btn-box {
     display: flex;
     align-items: center;
@@ -334,23 +383,28 @@ main .btn-box {
     margin: 1rem 0rem 0rem 3rem;
     flex-shrink: 0;
 }
-main .btn-box .btn-purple{
+
+main .btn-box .btn-purple {
     margin: 0rem 1rem 0rem 0rem;
 }
+
 main .btn-box .rdm-btn {
-    font-size:  .7rem;
+    font-size: .7rem;
     font-weight: bold;
 }
-main .arrows{
+
+main .arrows {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 4rem 3rem 0rem 3rem;
 }
+
 main .arrows .arrow svg {
     width: 3rem;
     height: 3rem;
 }
+
 #section-divider .text-box {
     width: max-content;
     color: #fff;
@@ -358,6 +412,7 @@ main .arrows .arrow svg {
     font-weight: 100;
     flex-shrink: 0;
 }
+
 #section-divider .edition-box {
     width: min-content;
     color: #fff;
@@ -368,7 +423,8 @@ main .arrows .arrow svg {
     padding: .2rem;
     text-align: center;
 }
-#section-divider .text-box::after{
+
+#section-divider .text-box::after {
     content: "";
     display: inline-block;
     width: 7px;
@@ -376,41 +432,50 @@ main .arrows .arrow svg {
     background-color: #fff;
     margin-left: 10px;
 }
+
 #new {
     height: 100vh;
 }
+
 #transition {
     position: relative;
     height: 100vh;
     width: 100%;
     padding: 3rem;
 }
-#transition .ball-2-withe.left{
+
+#transition .ball-2-withe.left {
     left: 5vmin;
     top: 7vmin;
 }
-#transition .ball-2-withe.right{
+
+#transition .ball-2-withe.right {
     right: 5vmin;
     top: 7vmin;
 }
-#transition .ball-5-withe{
+
+#transition .ball-5-withe {
     height: 120px;
     width: 120px;
 }
-#transition .ball-5-withe.left{
+
+#transition .ball-5-withe.left {
     left: 13vmin;
     top: 33vmin;
 }
-#transition .ball-5-withe.right{
+
+#transition .ball-5-withe.right {
     right: 13vmin;
     top: 33vmin;
 }
+
 #transition .ball-3-purple {
     right: 50vmin;
     top: 85vmin;
     box-shadow: none;
     background: var(--big-purple-text);
 }
+
 #transition .main-content {
     display: flex;
     align-items: center;
@@ -418,10 +483,12 @@ main .arrows .arrow svg {
     height: max-content;
     font-size: 4vmin;
 }
+
 #transition .main-content .explore {
     height: min-content;
     font-weight: bold;
 }
+
 #transition .main-content .explore p::after {
     content: "";
     display: inline-block;
@@ -430,18 +497,22 @@ main .arrows .arrow svg {
     background-color: #000;
     margin-left: 10px;
 }
-#transition .main-content .slogan{
+
+#transition .main-content .slogan {
     position: absolute;
     height: 200px;
     top: -85vmin;
     left: 45vmin;
 }
+
 #transition .main-content .slogan p {
     font-size: 80vmin;
 }
+
 #transition .next-to-slogan {
-   padding-top: 27vmin;
+    padding-top: 27vmin;
 }
+
 #transition img.down-arrow {
     position: absolute;
     bottom: 10vmin;
@@ -450,7 +521,8 @@ main .arrows .arrow svg {
     width: auto;
     object-fit: contain;
 }
-#transition .online-course.left{
+
+#transition .online-course.left {
     position: absolute;
     bottom: 22vh;
     left: 0;
@@ -458,7 +530,8 @@ main .arrows .arrow svg {
     font-weight: bold;
     transform: rotate(-90deg);
 }
-#transition .online-course.right{
+
+#transition .online-course.right {
     position: absolute;
     bottom: 22vh;
     right: 0;
@@ -466,6 +539,7 @@ main .arrows .arrow svg {
     font-weight: bold;
     transform: rotate(-90deg);
 }
+
 #transition .online-course::before {
     content: "";
     display: inline-block;
@@ -475,9 +549,247 @@ main .arrows .arrow svg {
     margin-right: 10px;
 }
 
+#courses {
+    position: relative;
+    height: max-content;
+}
 
+#courses .content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 3rem 0rem 3rem;
+}
 
+#courses .content-header .title h1 {
+    font-weight: 400;
+    font-size: 2rem;
+}
 
+#courses .content-header .title span.big-dark-text {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#courses .content-header .other-box {
+    width: 10.5vw;
+    font-weight: bold;
+    font-size: .9rem;
+    word-break: keep-all;
+}
+
+#courses .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0rem 3rem 0rem 3rem;
+    flex-wrap: wrap;
+}
+
+#courses .cards .card {
+    width: 250px;
+    height: max-content;
+    border: #fff 3px solid;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 5rem 0rem 5rem 0rem;
+    position: relative;
+}
+
+#courses .cards .card.active {
+    border: var(--big-purple-text) 3px solid;
+}
+
+#courses .cards .card h2 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+#courses .cards .card h2 .big-dark-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#courses .cards .card .underline {
+    top: calc(2rem + 60px);
+    left: calc(50% - calc(40px / 2));
+    height: 3px;
+    width: 50px;
+}
+
+#courses .cards .card .card-text {
+    width: 11rem;
+    font-size: .8rem;
+    font-weight: bold;
+    text-align: justify;
+    word-break: break-all;
+    line-height: 1.5rem;
+    text-align-last: center;
+    padding: .5rem 0rem .5rem 0rem;
+}
+
+#courses .cards .card .btn-box {
+    margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+#courses .cards .card .btn-box .btn-purple {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+#courses .three-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 5rem;
+}
+
+#courses .three-dots .dot {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #666;
+    opacity: .5;
+}
+
+#courses .three-dots .dot:nth-child(2n) {
+    display: none;
+}
+
+#courses .three-dots .dot.active {
+    background-color: var(--big-purple-text);
+    opacity: 1;
+}
+
+#courses .ball-4-purple {
+    box-shadow: none;
+}
+
+#courses .ball-4-purple.left {
+    top: 80%;
+    left: -40px;
+}
+
+#courses .ball-4-purple.right {
+    top: 80%;
+    right: -40px;
+}
+
+#about {
+    position: relative;
+    height: max-content;
+}
+
+#about .ball-4-withe {
+   top: 2rem;
+   left: calc(50% - 40px);
+}
+
+#about .year {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#about .year .dash {
+    height: 3px;
+    width: 60px;
+    background-color: #000;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+#about .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 3rem 0rem 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+#about .content .box {
+    width: 500px;
+}
+
+#about .content .box.left {
+    flex-shrink: 0;
+}
+#about .content .box.left .title {
+    width: max-content;
+}
+
+#about .content .box.left .title h2 {
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+#about .content .box.left .title h2 span.big-dark-text {
+    font-size: 5rem;
+    font-weight: bold;
+}
+#about .content .box.left .title h2 span.mid-dark-text {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#about .content .box.left .text-box p {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+#about .content .box.left .list ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+#about .content .box.left .list ul li {
+    font-size: 1.05rem;
+    font-weight: bold;
+    line-height: 1rem;
+    padding: 2rem 2rem 2rem 0rem;
+}
+#about .content .box.left .btn-purple {
+    font-size: .8rem;
+    font-weight: bold;
+    color: #000;
+}
+#about .content .other-box {
+    font-size: 1rem;
+    font-weight: bold;
+    transform: rotate(90deg);
+    margin-top: 25rem;
+}
+
+#about .content .box.right {
+    background-color: #666;
+}
+#about .content .box.right .slogan {
+    position: absolute;
+    height: 200px;
+    top: -85vmin;
+    right: -9rem;
+}
+#about .content .box.right .slogan p {
+    font-size: 80vmin;
+    transform: rotate(90deg);
+}
 
 
 
@@ -485,24 +797,31 @@ main .arrows .arrow svg {
     #home {
         height: max-content;
     }
+
     header nav {
         display: none;
     }
+
     main .title {
         padding: 0rem 0rem 0rem 1rem;
-    } 
+    }
+
     main .underline {
         left: 1.5rem;
-    } 
-    main .content .content-box .text-box h4{
+    }
+
+    main .content .content-box .text-box h4 {
         font-size: .9rem;
-    } 
+    }
+
     main .content {
         padding: 0rem 1rem 0rem 1rem;
-    } 
+    }
+
     main .btn-box {
         margin: 1rem 0rem 0rem 1rem;
-    } 
+    }
+
     main .content .content-box {
         display: flex;
         flex-direction: column;
@@ -510,26 +829,32 @@ main .arrows .arrow svg {
         align-items: center;
         height: min-content;
         width: max-content;
-    } 
+    }
+
     header .box {
         width: max-content;
     }
-    header .box .icon.menu{
+
+    header .box .icon.menu {
         width: 1.4rem;
         height: 1.4rem;
     }
+
     main .content .other-box {
         width: max-content;
         margin: 0;
     }
-    main .content .other-box ul{
+
+    main .content .other-box ul {
         margin: 0;
         padding: 1rem;
     }
+
     main .arrows .arrow svg {
         width: 2rem;
         height: 2rem;
     }
+
     #home img.saturate-img {
         position: absolute;
         right: -1rem;
@@ -539,44 +864,91 @@ main .arrows .arrow svg {
         object-fit: cover;
         z-index: -1;
     }
+
     #home .big-purple-bordered-box {
         display: none;
     }
+
     #section-divider {
         align-items: center;
         justify-content: center;
     }
-    #section-divider div{
+
+    #section-divider div {
         margin: .5rem;
     }
-    #transition .main-content .slogan{
+
+    #transition .main-content .slogan {
         position: absolute;
         top: 30vh;
         left: 35vw;
     }
+
     #transition .main-content .slogan p {
         font-size: 25vmin;
     }
+
     #transition .ball-3-purple {
         display: none;
     }
+
+    #courses .content-header {
+        display: block;
+    }
+
+    #courses .cards .card {
+        display: none;
+    }
+
+    #courses .cards .card.active {
+        display: flex;
+    }
+
+    #courses .content-header .other-box {
+        width: 29vw;
+        font-weight: bold;
+        font-size: .9rem;
+        word-break: keep-all;
+    }
+
+    #courses .content-header .other-box ul {
+        padding: 0rem 0rem 0rem 1rem;
+    }
+
+    #courses .three-dots .dot:nth-child(2n) {
+        display: flex;
+    }
+    #about .content .other-box {
+        font-weight: bold;
+        transform: rotate(0deg);
+        margin-top: 2rem;
+    }
+    #about .content .box.right {
+        display: none;
+    }
+    
 }
+
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    main .content .content-box{
+    main .content .content-box {
         width: 100vw;
         align-items: flex-start;
-    } 
-    main .content .content-box .text-box p{
+    }
+
+    main .content .content-box .text-box p {
         width: 350px;
-    } 
+    }
+
     main .content .other-box {
         width: max-content;
         margin: 0;
     }
-    main .content .other-box ul{
+
+    main .content .other-box ul {
         margin: 0;
         padding: 1rem;
     }
+
     #home img.saturate-img {
         position: absolute;
         right: -2rem;
@@ -586,6 +958,7 @@ main .arrows .arrow svg {
         object-fit: cover;
         z-index: -1;
     }
+
     #home .big-purple-bordered-box {
         position: absolute;
         top: 10vh;
@@ -599,5 +972,13 @@ main .arrows .arrow svg {
         border-bottom-left-radius: 9rem;
         border-top-left-radius: 9rem;
         padding: 7vh 19vw;
+    }
+    #about .content .other-box {
+        font-weight: bold;
+        transform: rotate(0deg);
+        margin-top: 2rem;
+    }
+    #about .content .box.right {
+        display: none;
     }
 }
