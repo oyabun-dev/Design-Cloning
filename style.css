@@ -56,6 +56,16 @@ a {
     color: #000;
 }
 
+.ball-oversized {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, .1);
+    position: absolute;
+    z-index: -1;
+}
+
 .ball-5-withe {
     width: 100px;
     height: 100px;
@@ -690,8 +700,8 @@ main .arrows .arrow svg {
 }
 
 #about .ball-4-withe {
-   top: 2rem;
-   left: calc(50% - 40px);
+    top: 2rem;
+    left: calc(50% - 40px);
 }
 
 #about .year {
@@ -721,12 +731,14 @@ main .arrows .arrow svg {
 }
 
 #about .content .box {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
 }
 
 #about .content .box.left {
     flex-shrink: 0;
 }
+
 #about .content .box.left .title {
     width: max-content;
 }
@@ -740,6 +752,7 @@ main .arrows .arrow svg {
     font-size: 5rem;
     font-weight: bold;
 }
+
 #about .content .box.left .title h2 span.mid-dark-text {
     font-size: 3rem;
     font-weight: bold;
@@ -765,11 +778,13 @@ main .arrows .arrow svg {
     line-height: 1rem;
     padding: 2rem 2rem 2rem 0rem;
 }
+
 #about .content .box.left .btn-purple {
     font-size: .8rem;
     font-weight: bold;
     color: #000;
 }
+
 #about .content .other-box {
     font-size: 1rem;
     font-weight: bold;
@@ -780,15 +795,111 @@ main .arrows .arrow svg {
 #about .content .box.right {
     background-color: #666;
 }
+
 #about .content .box.right .slogan {
     position: absolute;
     height: 200px;
     top: -85vmin;
     right: -9rem;
 }
+
 #about .content .box.right .slogan p {
     font-size: 80vmin;
     transform: rotate(90deg);
+}
+
+#mini-section-devider {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+#mini-section-devider .ball-5-withe {
+    left: 30%;
+}
+
+#why-us {
+    position: relative;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0rem 3rem 0rem 3rem;
+    flex-wrap: wrap;
+}
+
+#why-us .boxes {
+    width: 45%;
+}
+
+#why-us .slogan-box {
+    padding: 3rem;
+    text-align: center;
+    flex-shrink: 1;
+}
+
+#why-us .text-box {
+    padding: 3rem;
+    flex-shrink: 0;
+}
+
+#why-us .text-box h2 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#why-us .text-box p {
+    font-size: .9rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+#why-us .text-box p::after {
+    content: "";
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    background-color: #000;
+}
+
+#why-us .slogan .big-purple-text {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 55vmin;
+    text-align: center;
+}
+
+#why-us .text-box .btn-box .btn-purple {
+    font-size: .8rem;
+    font-weight: bold;
+    color: #000;
+    margin: 2rem 0rem;
+}
+
+#why-us .ball-oversized {
+    top: -120px;
+    right: -85px;
+}
+
+#why-us .ball-4-withe {
+    bottom: -50px;
+    right: 150px;
+}
+
+#why-us .other-box {
+    font-size: 1rem;
+    font-weight: bold;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: -60px;
+    left: 0;
 }
 
 
@@ -918,15 +1029,45 @@ main .arrows .arrow svg {
     #courses .three-dots .dot:nth-child(2n) {
         display: flex;
     }
+
     #about .content .other-box {
         font-weight: bold;
         transform: rotate(0deg);
         margin-top: 2rem;
     }
+
+    #about .content .other-box ul {
+        padding: 1rem;
+    }
+
     #about .content .box.right {
         display: none;
     }
-    
+
+    #why-us {
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    #why-us .boxes {
+        /* padding: 3rem; */
+        width: 100%;
+    }
+
+    #why-us .slogan p {
+        font-size: 25vmin;
+    }
+
+    #why-us .text-box p {
+        width: 100%;
+    }
+
+    #why-us .other-box {
+        transform: rotate(0);
+        padding-left: 2rem;
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -973,12 +1114,41 @@ main .arrows .arrow svg {
         border-top-left-radius: 9rem;
         padding: 7vh 19vw;
     }
+
     #about .content .other-box {
         font-weight: bold;
         transform: rotate(0deg);
         margin-top: 2rem;
     }
+
     #about .content .box.right {
         display: none;
+    }
+
+    #courses .cards .card:last-child {
+        display: none;
+    }
+
+    #why-us {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    #why-us .boxes {
+        width: 100%;
+    }
+
+    #why-us .text-box p {
+        width: 80%;
+    }
+
+    #why-us .slogan .big-purple-text {
+        font-size: 40vmin;
+    }
+
+    #why-us .other-box {
+        transform: rotate(0);
+        padding-left: 2rem;
     }
 }
